@@ -10,7 +10,7 @@
 <body>
     <div class="container my-5">
         <h2>List of Clients</h2>
-        <a class="btn btn-primary" href="/myShop/create.php" role="button">NewClient</a> <br>
+        <a class="btn btn-primary" href="/myShop/create.php" role="button">New Client</a> <br>
         <table class="table">
             <thead>
                 <tr>
@@ -39,7 +39,7 @@
                     }
 
                     //  read all raw from database table
-                    $sql = "select * from clients";
+                    $sql = "SELECT * FROM clients";
                     $result = $connection->query($sql);
 
                     if (!$result) {
@@ -66,18 +66,6 @@
                 ?>
 
 
-                <tr>
-                    <td>10</td>
-                    <td>Kapila Senanayake</td>
-                    <td>kapila20@gmail.com</td>
-                    <td>0765236798</td>
-                    <td>Kothalawala, Kaduwela</td>
-                    <td>18/05/2022</td>
-                    <td>
-                        <a class="btn btn-primary btn-sm" href="/myShop/edit.php">Edit</a>
-                        <a class="btn btn-danger btn-sm" href="/myShop/delete.php">Delete</a>
-                    </td>
-                </tr>
             </tbody>
         </table>
     </div>
